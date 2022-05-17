@@ -56,7 +56,7 @@ packName = input(colors.BGREEN + "Welcome to DataCreate! How do you want to name
 dataName = input(colors.RESET + colors.BYELLOW + "How do you want to name your namespace?" + colors.RESET + "\n\n" + colors.CYAN).lower()
 validName = "false"
 while validName == "false":
-    if(bool(re.match('^[a-zA-Z]*$',dataName))==True):
+    if(bool(re.match('^[a-zA-Z0-9_]*$',dataName))==True):
         validName = "true"
     else:
         dataName = input(colors.RESET + colors.RED + "Namespace not valid. Namespaces can not use specials characters. Please give a valid name.\n" + colors.RESET + colors.CYAN)
@@ -125,6 +125,7 @@ os.mkdir("loot_tables")
 os.mkdir("predicates")
 os.mkdir("recipes")
 os.mkdir("structures")
+os.mkdir("item_modifiers")
 os.mkdir("tags")
 os.mkdir("worldgen")
 os.chdir("worldgen")
