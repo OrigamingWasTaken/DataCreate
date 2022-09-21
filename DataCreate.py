@@ -1,11 +1,12 @@
 #Made by Origaming
 
-#Every modules are built in python
+#All modules are built in python
 import sys
 import os
 import time
 import subprocess
 import re
+import keyboard
 os.system("clear")
 filePath = os.path.dirname(os.path.realpath(__file__))
 
@@ -50,6 +51,9 @@ mineVersions = {
     "1.18":"8",
     "1.18.1":"8",
     "1.18.2":"9"
+    "1.19":"10"
+    "1.19.1":"10"
+    "1.19.2":"10"
 }
 
 packName = input(colors.BGREEN + "Welcome to DataCreate! How do you want to name your datapack?" + colors.RESET + "\n\n" + colors.CYAN)
@@ -137,9 +141,11 @@ os.mkdir("configured_surface_builder")
 os.mkdir("noise_settings")
 os.mkdir("processor_list")
 os.mkdir("template_pool")
-lastR = input(colors.RESET + colors.BGREEN + "Your datapack has been generated! What do you want to do?" + colors.RESET + "\n\n" + colors.BWHITE + colors.BLACK + "Open folder > open\nQuite DataCreate > quit" + colors.RESET + colors.CYAN + "\n\n")
+lastR = input(colors.RESET + colors.BGREEN + "Your datapack has been generated! What do you want to do?" + colors.RESET + "\n\n" + colors.BWHITE + colors.BLACK + "Open folder > open\nQuit DataCreate > quit (or F1)" + colors.RESET + colors.CYAN + "\n\n")
 validR = "false"
 while validR == "false":
+    if keyboard.read_key() == "f1":
+        sys.quit()
     if lastR == "open":
         if sys.platform=='win32':
             os.system("start "+ dataPath)
