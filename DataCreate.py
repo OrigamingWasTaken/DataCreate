@@ -3,10 +3,7 @@
 #All modules are built in python
 import sys
 import os
-import time
-import subprocess
 import re
-import keyboard
 os.system("clear")
 filePath = os.path.dirname(os.path.realpath(__file__))
 
@@ -152,7 +149,7 @@ while validR == "false":
         if sys.platform=='darwin':
             os.system("open " + dataPath)
 
-        input(colors.RESET + colors.BYELLOW + "Thanks for using DataCreate! Press enter to quit. (Made by Origaming)")
+        input(colors.RESET + colors.BYELLOW + "Thanks for using DataCreate! Press enter to quit. (Made by Origaming)" + colors.RESET)
         sys.exit()
     elif lastR == "quit":
         input(colors.RESET + colors.BYELLOW + "Thanks for using DataCreate! Press enter to quit. (Made by Origaming)")
