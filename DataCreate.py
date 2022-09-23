@@ -50,9 +50,9 @@ mineVersions = {
     "1.17.1":"7",
     "1.18":"8",
     "1.18.1":"8",
-    "1.18.2":"9"
-    "1.19":"10"
-    "1.19.1":"10"
+    "1.18.2":"9",
+    "1.19":"10",
+    "1.19.1":"10",
     "1.19.2":"10"
 }
 
@@ -141,11 +141,10 @@ os.mkdir("configured_surface_builder")
 os.mkdir("noise_settings")
 os.mkdir("processor_list")
 os.mkdir("template_pool")
-lastR = input(colors.RESET + colors.BGREEN + "Your datapack has been generated! What do you want to do?" + colors.RESET + "\n\n" + colors.BWHITE + colors.BLACK + "Open folder > open\nQuit DataCreate > quit (or F1)" + colors.RESET + colors.CYAN + "\n\n")
+lastR = input(colors.RESET + colors.BGREEN + "Your datapack has been generated! What do you want to do?" + colors.RESET + "\n\n" + colors.BWHITE + colors.BLACK + "Open folder > open\nQuit DataCreate > quit" + colors.RESET + colors.CYAN + "\n\n")
 validR = "false"
 while validR == "false":
-    if keyboard.read_key() == "f1":
-        sys.quit()
+   
     if lastR == "open":
         if sys.platform=='win32':
             os.system("start "+ dataPath)
@@ -153,8 +152,8 @@ while validR == "false":
         if sys.platform=='darwin':
             os.system("open " + dataPath)
 
-            input(colors.RESET + colors.BYELLOW + "Thanks for using DataCreate! Press enter to quit. (Made by Origaming)")
-            sys.exit()
+        input(colors.RESET + colors.BYELLOW + "Thanks for using DataCreate! Press enter to quit. (Made by Origaming)")
+        sys.exit()
     elif lastR == "quit":
         input(colors.RESET + colors.BYELLOW + "Thanks for using DataCreate! Press enter to quit. (Made by Origaming)")
         sys.exit()
