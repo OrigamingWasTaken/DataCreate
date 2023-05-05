@@ -1,4 +1,19 @@
 # DataCreate
-A python script to generate minecraft Datapacks automatically
 
-Download and launch the script using a python3 interpreter. Then, follow the instructions in the programm.
+## What is this?
+
+DataCreate is a python script made to generate datapacks from 1.13.3 up to 1.19.4
+
+## Usage
+
+### Python
+`$ python3 DataCreate.py`
+
+### Adding as a shell command
+
+For exemple on Macos:
+`$ mv DataCreate.py datacreate`
+`$ chmod +x datacreate`
+`$ sudo mv datacreate /usr/local/bin`
+
+Reopen your terminal and you can now do `$ datacreate` to launch the program
