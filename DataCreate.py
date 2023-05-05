@@ -80,7 +80,7 @@ while foundVersion == "false":
         dataVer = input(colors.RESET + colors.RED + "Version not found. Please give a supported version.\n" + colors.RESET + colors.CYAN)
 
 dataDesc = input(colors.RESET + colors.BWHITE + "What is the description of your datapack?" + colors.RESET + "\n\n" + colors.CYAN)
-dataPath = input(colors.RESET + colors.BRED + "Where do you want to create your datapack? (Leave blank to create in the script's folder)" + colors.RESET + "\n\n" + colors.CYAN)
+dataPath = input(colors.RESET + colors.BRED + "Where do you want to create your datapack? (Leave blank to create in the current working directory)" + colors.RESET + "\n\n" + colors.CYAN)
 
 validDir = "false"
 while validDir == "false":
