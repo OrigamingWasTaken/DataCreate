@@ -1,12 +1,13 @@
 #!/usr/local/bin/python3
 
+#Every modules are built in python
 import sys
 import os
 import time
 import subprocess
 import re
 os.system("clear")
-filePath = os.path.dirname(os.path.realpath(__file__))
+filePath = os.getcwd()
 
 class colors:
     BLACK = '\u001b[30m'
@@ -86,7 +87,7 @@ while validDir == "false":
     if dataPath:
         isDirectory = os.path.isdir(dataPath)
         if isDirectory == False:
-            dataPath = input(colors.RESET + colors.RED + "The path you provided is invalid. Please give a valid path. (Leave blank to create in the script's folder)\n" + colors.RESET + colors.CYAN)
+            dataPath = input(colors.RESET + colors.RED + "The path you provided is invalid. Please give a valid path. (Leave blank to create in the current working directory)\n" + colors.RESET + colors.CYAN)
         else:
             validDir = "true"
     else:
