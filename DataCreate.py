@@ -1,6 +1,5 @@
-#Made by Origaming
+#!/usr/local/bin/python3
 
-#Every modules are built in python
 import sys
 import os
 import time
@@ -49,7 +48,13 @@ mineVersions = {
     "1.17.1":"7",
     "1.18":"8",
     "1.18.1":"8",
-    "1.18.2":"9"
+    "1.18.2":"9",
+    "1.19":"10",
+    "1.19.1":"10",
+    "1.19.2":"10",
+    "1.19.3":"10",
+    "1.19.4":"12",
+    "1.20":"14"
 }
 
 packName = input(colors.BGREEN + "Welcome to DataCreate! How do you want to name your datapack?" + colors.RESET + "\n\n" + colors.CYAN)
@@ -125,7 +130,6 @@ os.mkdir("loot_tables")
 os.mkdir("predicates")
 os.mkdir("recipes")
 os.mkdir("structures")
-os.mkdir("item_modifiers")
 os.mkdir("tags")
 os.mkdir("worldgen")
 os.chdir("worldgen")
