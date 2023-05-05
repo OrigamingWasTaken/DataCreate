@@ -17,3 +17,11 @@ For exemple on Macos:
 3. `$ sudo mv datacreate /usr/local/bin`
 
 Reopen your terminal and you can now do `$ datacreate` to launch the program
+
+## Troubleshooting
+
+If the file doesn't work as a command, it is maybe because you don't have a symlink pointing to your python3. To fix this do:
+
+`$ sudo ln -s $(which python3) /usr/local/bin/python3`
+
+This will create a symlink to your python3
