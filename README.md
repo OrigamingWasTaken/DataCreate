@@ -1,6 +1,6 @@
 # DataCreate
 
-## What is this?
+## What is this
 
 DataCreate is a python script made to generate datapacks from 1.13.3 up to 1.19.4
 
